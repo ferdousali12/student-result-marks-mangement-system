@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Result Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Result Management System</h1>
+
+      <div class="card">
+        <div class="form">
+          <input type="text" id="name" placeholder="Student Name" />
+          <input
+            type="number"
+            id="marks1"
+            placeholder="Mathematics Marks"
+            min="0"
+            max="100"
+          />
+          <input
+            type="number"
+            id="marks2"
+            placeholder="Physics Marks"
+            min="0"
+            max="100"
+          />
+          <input
+            type="number"
+            id="marks3"
+            placeholder="Computer Science Marks"
+            min="0"
+            max="100"
+          />
+          <button id="submitBtn">Add Student</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <input type="text" id="search" placeholder="🔍 Search student..." />
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Math</th>
+                <th>Physics</th>
+                <th>CS</th>
+                <th>Total</th>
+                <th>Percentage</th>
+                <th>Grade</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
